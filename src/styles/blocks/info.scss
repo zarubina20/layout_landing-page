@@ -1,0 +1,13 @@
+.info {
+  max-width: 600px;
+  margin: 40px 0 100px;
+  padding: 0 20px;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+
