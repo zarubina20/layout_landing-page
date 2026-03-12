@@ -1,10 +1,15 @@
 .about {
   @include pageGrid;
+
   background-color: #FCFAEF;
+  height: 416px;
   padding: 48px;
+  align-items: center;
 
   &__title {
+    margin: 0;
     grid-column: 1 / -1;
+    align-self: center;
 
     @include onTablet {
       grid-column: 1 / 4;
