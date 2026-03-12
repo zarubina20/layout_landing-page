@@ -1,14 +1,27 @@
 .main {
+  margin-top: 96px;
+  margin-bottom: 96px;
   background-color: #fff;
 
   &__content {
+    @include contentPaddingInline;
     display: grid;
     row-gap: 96px;
-    padding-block: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     @include onTablet {
-      padding-block: 120px;
+      padding-top: 120px;
+      padding-bottom: 120px;
       row-gap: 120px;
+    }
+
+    &--bottom {
+      padding-top: 96px;
+
+      @include onTablet {
+        padding-top: 120px;
+      }
     }
   }
 }

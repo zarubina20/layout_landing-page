@@ -1,4 +1,6 @@
 .recommended {
+  @include contentPaddingInline;
+
   &__products {
     @include pageGrid;
     row-gap: 40px;
