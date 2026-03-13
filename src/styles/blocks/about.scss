@@ -1,21 +1,21 @@
 .about {
-  @include pageGrid;
+  @include page-grid;
 
-  background-color: #FCFAEF;
+  align-items: center;
   height: 416px;
   padding: 48px;
-  align-items: center;
+  background-color: #fcfaef;
 
   &__title {
-    margin: 0;
     grid-column: 1 / -1;
     align-self: center;
+    margin: 0;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 6;
     }
   }
@@ -23,11 +23,11 @@
   &__content {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 6 / -1;
     }
   }

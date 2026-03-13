@@ -2,18 +2,22 @@
   margin: 0;
   margin-bottom: 48px;
 
-  font-weight: 700;
   font-size: 32px;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: -1.5px;
 
-  @include onTablet {
+  @include on-tablet {
     margin-bottom: 64px;
     font-size: 40px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     font-size: 48px;
+  }
+
+  @include on-mobile {
+    font-size: 32px;
   }
 
   &--align--left {

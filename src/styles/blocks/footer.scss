@@ -1,18 +1,17 @@
 .footer {
-  position: sticky;
-  bottom: 0;
-  z-index: -1;
-  background-color: #1B2129;
   color: #fff;
+  background-color: #1b2129;
 
   &__content {
-    @include contentPaddingInline;
-    padding-block: 40px;
+    @include content-padding-inline;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-block: 40px;
   }
 
   &__logo-link {
@@ -25,7 +24,7 @@
 
     @include hover(opacity, 0.7);
 
-    @include onTablet {
+    @include on-tablet {
       height: 24px;
     }
   }

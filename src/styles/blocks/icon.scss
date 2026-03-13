@@ -1,16 +1,18 @@
 .icon {
   display: block;
-  height: 24px;
+
   width: 24px;
+  height: 24px;
+
   background-image: url(../icons/icon-burger-menu.svg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet {
-    height: 32px;
+  @include on-tablet {
     width: 32px;
+    height: 32px;
   }
 
   &--phone {
@@ -29,5 +31,3 @@
     background-image: url(../icons/icon-close.svg);
   }
 }
-
-
