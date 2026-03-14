@@ -7,7 +7,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
+
+    @include on-mobile {
+      padding-inline: 16px; // чуть меньше на мобильном, чтобы лого и иконки не слипались
+    }
   }
 
   &__top {

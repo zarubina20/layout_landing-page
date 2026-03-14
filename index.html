@@ -28,10 +28,14 @@
         <div class="header__content">
           <div class="top-bar menu__top">
             <a href="#" class="top-bar__logo">
-              <img src="./src/images/logo.svg" alt="bose-logo">
+              <img src="./src/images/logo.svg"
+              alt="bose-logo"
+              class="top-bar__logo-img">
             </a>
             <div class="top-bar__icons">
-              <a href="tel:+1 234 5555-55-55" class="icon icon--phone"></a>
+              <a href="tel:+1 234 5555-55-55"
+                class="icon icon--phone"
+                data-phone="+1 234 5555-55-55"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -48,8 +52,10 @@
     <aside class="page__menu menu" id="menu">
       <div class="container">
         <div class="top-bar menu__top">
-          <a href="#" class="top-bar__logo">
-            <img src="./src/images/logo.svg" alt="bose-logo">
+          <a href="#" class="top-bar__logo-link">
+            <img src="./src/images/logo.svg"
+              alt="bose-logo"
+              class="top-bar__logo-img">
           </a>
           <div class="heder__icons">
             <a href="#" class="icon icon--close"></a>
@@ -198,26 +204,39 @@
       </section>
       <section class="contacts" id="contacts">
         <h2 class="section-title">Contact us</h2>
-        <form id="contacts__form" name="contact-us"
+        <form id="contacts-form" name="contact-us"
         class="contacts__form">
           <input
             id="name"
+            name="name"
             type="text"
             class="contacts__input"
             placeholder="Name"
+            minlength="2"
+            maxlength="50"
+            pattern="[A-Za-z\s]+"
+            required
           >
 
           <input
             id="email"
+            name="email"
             type="email"
             class="contacts__input"
             placeholder="Email"
+            minlength="8"
+            maxlength="100"
+            required
           >
 
           <textarea
             id="message"
+            name="message"
             class="contacts__textarea"
             placeholder="Message"
+            minlength="10"
+            maxlength="500"
+            required
           ></textarea>
 
           <button type="submit" class="contacts__send">
