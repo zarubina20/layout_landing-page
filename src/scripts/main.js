@@ -1,5 +1,7 @@
 'use strict';
 
+import '../styles/style.scss';
+
 const form = document.getElementById('contacts-form');
 
 form.addEventListener('submit', (event) => {
